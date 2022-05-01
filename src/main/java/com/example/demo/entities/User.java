@@ -25,4 +25,8 @@ public class User {
 
 	@OneToMany(mappedBy = "user")
 	private List<UserRole> userRoleList;
+	
+	@OneToMany(mappedBy = "enWord")
+	private List<SavedWord> savedWordList;
+	
 }
