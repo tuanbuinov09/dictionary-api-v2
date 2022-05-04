@@ -36,7 +36,7 @@ public class EnWord {
 	private int views;
 
 	@Column(name = "pronunciation")
-	private String pronunciation;		
+	private String pronunciation;
 
 	@OneToMany(mappedBy = "enWord", fetch = FetchType.EAGER)
 	private List<Meaning> meanings;
