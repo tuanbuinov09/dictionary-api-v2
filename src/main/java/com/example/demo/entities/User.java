@@ -4,8 +4,17 @@ import java.util.List;
 
 import javax.persistence.*;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Entity
-@Table(name = "[user]")
+@Table(name = "user")
+@Getter
+@Setter
+@NoArgsConstructor
 public class User {
 	@Id
 	@Column(name = "id")
